@@ -11,3 +11,23 @@ function addTask () {
         return;
     } 
 }
+
+// Filter Tasks
+function toggleFilter() {
+    const dropbtn = document.getElementById("dropdownContent");
+ dropbtn.style.display = dropbtn.style.display === 'none' ? 'block' : 'none'
+}
+
+// function filterTasks ( ) {
+//     const filterValue = document.getElementById("filterSelect").value;
+//     const tasks = document.querySelectorAll(".task");
+
+//     tasks.forEach(task => {
+//         const isCompleted = task.classList.contains("completed");
+//         if (filterValue === "all" || (filterValue === "completed" && isCompleted) || (filterValue === "pending" && !isCompleted)) {
+//             task.style.display = "inline";
+//         } else {
+//             task.style.display = "none";
+//         }
+//     });
+// }

@@ -6,7 +6,7 @@
     <title>Mini-Project-RevoU</title>
 
     <!-- My Style -->
-    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,13 +29,26 @@
         />
         <input type="date" class="dateInput" id="dateInput" />
         <button onclick="addTask()">+</button>
-
-    
       </div>
+
+      <!-- Filter and Delete -->
+      <div class="filter"> 
+        <button onclick="toggleFilter()" class="dropbtn">FILTER</button>
+        <div id="dropdownContent" class="dropdown-content">
+          <a href="#" onclick="filterTask('all')">All</a>
+          <a href="#"  onclick="filterTask('pending')">Pending</a>
+          <a href="#" onclick="filterTask('completed')">Completed</a>
+        </select>
+      </div> 
+
+        <button onclick="deleteAll">Delete All</button>
+      </div>
+      <!-- Task List -->
+      <h2>Task List</h2>
       <ul id="taskList"></ul>
     </div>
 
     <!-- !My Javascript -->
-    <script src="/JS/main.js"></script>
+    <script src="JS/main.js"></script>
   </body>
 </html>

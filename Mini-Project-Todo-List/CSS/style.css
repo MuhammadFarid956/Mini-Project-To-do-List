@@ -7,7 +7,8 @@ body {
   background-color: cadetblue;
 }
 
-.container  {
+/* Header Section */
+.container {
   text-align: center;
   background-color: #f8f9;
   border-radius: 10px;
@@ -23,7 +24,7 @@ body {
 button {
   flex: 1;
   padding: 8px;
-  background-color: #28a475 ;
+  background-color: #28a475;
   border: none;
   color: white;
   border-radius: 5px;
@@ -33,4 +34,13 @@ ul {
   list-style: none;
   padding: 0;
   background-color: black;
+}
+
+/* Filter and Delete section */
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px; /* tambahkan jarak antar elemen */
+  margin: 10px 0;
 }
