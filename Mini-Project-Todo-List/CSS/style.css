@@ -1,0 +1,36 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+body {
+  background-color: cadetblue;
+}
+
+.container  {
+  text-align: center;
+  background-color: #f8f9;
+  border-radius: 10px;
+  margin: 200px;
+  padding-bottom: 20px;
+}
+
+.form input {
+  flex: 1;
+  padding: 5px;
+}
+
+button {
+  flex: 1;
+  padding: 8px;
+  background-color: #28a475 ;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  background-color: black;
+}
