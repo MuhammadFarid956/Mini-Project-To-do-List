@@ -18,16 +18,34 @@ function toggleFilter() {
   dropbtn.style.display = dropbtn.style.display === "none" ? "block" : "none";
 }
 
-// function filterTasks ( ) {
-//     const filterValue = document.getElementById("filterSelect").value;
-//     const tasks = document.querySelectorAll(".task");
+// Close dropdown jika klik diluar
 
-//     tasks.forEach(task => {
-//         const isCompleted = task.classList.contains("completed");
-//         if (filterValue === "all" || (filterValue === "completed" && isCompleted) || (filterValue === "pending" && !isCompleted)) {
-//             task.style.display = "inline";
-//         } else {
-//             task.style.display = "none";
-//         }
-//     });
+function toggleDropdown() {
+  const content = document.getElementById("dropdownContent");
+  content.style.display = content.style.display === "block" ? "none" : "block";
+}
+
+window.onclick = function (event) {
+  if (!event.target.matches('.dropbtn')) {
+    const dropdowns = document.getElementsByClassName("dropdown-content");
+    for (let i = 0; i < dropdowns.length; i++) {
+      dropdowns[i].style.display = "none";
+    }
+  }
+};
+
+// // Function to add a new task
+// function filterTask(status) {
+//   const tasks = document.querySelectorAll(".task");
+//   tasks.forEach((task) => {
+//     if (status === "all") {
+//       task.style.display = "block";
+//     } else if (status === "pending" && !task.classList.contains("completed")) {
+//       task.style.display = "block";
+//     } else if (status === "completed" && task.classList.contains("completed")) {
+//       task.style.display = "block";
+//     } else {
+//       task.style.display = "none";
+//     }
+//   });
 // }
